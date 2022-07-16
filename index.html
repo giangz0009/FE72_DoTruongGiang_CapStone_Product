@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="product-wrap">
+      <div class="container">
+        <!-- Product filter -->
+        <div class="product-filter">
+          <select
+            name="productType"
+            id="product-select"
+            class="form-select form-select-lg"
+            aria-label="Default select example"
+          >
+            <option value="">--Chọn Loại sản phẩm muốn hiển thị--</option>
+            <option value="iphone">--Iphone--</option>
+            <option value="Samsung">--Samsung--</option>
+          </select>
+        </div>
+        <section id="products-list">
+          <!-- Add product--apple/product--samsung for type -->
+          <!-- Add product--hearted if user click heart -->
+          <!-- Add product--carting if product is adding into cart -->
+          <!-- Product Item -->
+          <div class="product product--samsung">
+            <header class="product-header">
+              <div class="product-header__icon">
+                <i class="product-header__icon-apple fa-brands fa-apple"></i>
+                <i
+                  class="product-header__icon-samsung fa-brands fa-galactic-republic"
+                ></i>
+              </div>
+              <p>In Stock</p>
+            </header>
+            <main class="product-main">
+              <div class="product-main__img">
+                <img src="./assets/img/iphone-1.png" alt="Iphone 13" />
+              </div>
+              <div class="product-main-content">
+                <header class="product-main-content__heading">
+                  <h1>Product Name</h1>
+                  <i id="like" class="fa-solid fa-heart"></i>
+                </header>
+                <div class="product-main-content__desc">
+                  <h3>Product Type</h3>
+                  <p>Product Desc</p>
+                </div>
+              </div>
+            </main>
+            <footer class="product-footer">
+              <p class="product-footer__price">$ 400</p>
+              <button id="addToCart">Add</button>
+              <div class="product-footer__cart-choosing">
+                <button
+                  class="product-footer__cart-button product-footer__cart-button--prev"
+                >
+                  <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <span class="product-footer__cart-amount">1</span>
+                <button
+                  class="product-footer__cart-button product-footer__cart-button--next"
+                >
+                  <i class="fa-solid fa-angle-right"></i>
+                </button>
+              </div>
+            </footer>
+          </div>
+          <!-- Product Item -->
+          <div class="product product--samsung">
+            <header class="product-header">
+              <div class="product-header__icon">
+                <i class="product-header__icon-apple fa-brands fa-apple"></i>
+                <i
+                  class="product-header__icon-samsung fa-brands fa-galactic-republic"
+                ></i>
+              </div>
+              <p>In Stock</p>
+            </header>
+            <main class="product-main">
+              <div class="product-main__img">
+                <img src="./assets/img/iphone-1.png" alt="Iphone 13" />
+              </div>
+              <div class="product-main-content">
+                <header class="product-main-content__heading">
+                  <h1>Product Name</h1>
+                  <i id="like" class="fa-solid fa-heart"></i>
+                </header>
+                <div class="product-main-content__desc">
+                  <h3>Product Type</h3>
+                  <p>Product Desc</p>
+                </div>
+              </div>
+            </main>
+            <footer class="product-footer">
+              <p class="product-footer__price">$ 400</p>
+              <button id="addToCart">Add</button>
+            </footer>
+          </div>
+          <!-- Product Item -->
+          <div class="product product--samsung">
+            <header class="product-header">
+              <div class="product-header__icon">
+                <i class="product-header__icon-apple fa-brands fa-apple"></i>
+                <i
+                  class="product-header__icon-samsung fa-brands fa-galactic-republic"
+                ></i>
+              </div>
+              <p>In Stock</p>
+            </header>
+            <main class="product-main">
+              <div class="product-main__img">
+                <img src="./assets/img/iphone-1.png" alt="Iphone 13" />
+              </div>
+              <div class="product-main-content">
+                <header class="product-main-content__heading">
+                  <h1>Product Name</h1>
+                  <i id="like" class="fa-solid fa-heart"></i>
+                </header>
+                <div class="product-main-content__desc">
+                  <h3>Product Type</h3>
+                  <p>Product Desc</p>
+                </div>
+              </div>
+            </main>
+            <footer class="product-footer">
+              <p class="product-footer__price">$ 400</p>
+              <button id="addToCart">Add</button>
+            </footer>
+          </div>
+          <!-- Product Item -->
+          <div class="product product--samsung">
+            <header class="product-header">
+              <div class="product-header__icon">
+                <i class="product-header__icon-apple fa-brands fa-apple"></i>
+                <i
+                  class="product-header__icon-samsung fa-brands fa-galactic-republic"
+                ></i>
+              </div>
+              <p>In Stock</p>
+            </header>
+            <main class="product-main">
+              <div class="product-main__img">
+                <img src="./assets/img/iphone-1.png" alt="Iphone 13" />
+              </div>
+              <div class="product-main-content">
+                <header class="product-main-content__heading">
+                  <h1>Product Name</h1>
+                  <i id="like" class="fa-solid fa-heart"></i>
+                </header>
+                <div class="product-main-content__desc">
+                  <h3>Product Type</h3>
+                  <p>Product Desc</p>
+                </div>
+              </div>
+            </main>
+            <footer class="product-footer">
+              <p class="product-footer__price">$ 400</p>
+              <button id="addToCart">Add</button>
+            </footer>
+          </div>
+          <!-- Product Item -->
+          <div class="product product--samsung">
+            <header class="product-header">
+              <div class="product-header__icon">
+                <i class="product-header__icon-apple fa-brands fa-apple"></i>
+                <i
+                  class="product-header__icon-samsung fa-brands fa-galactic-republic"
+                ></i>
+              </div>
+              <p>In Stock</p>
+            </header>
+            <main class="product-main">
+              <div class="product-main__img">
+                <img src="./assets/img/iphone-1.png" alt="Iphone 13" />
+              </div>
+              <div class="product-main-content">
+                <header class="product-main-content__heading">
+                  <h1>Product Name</h1>
+                  <i id="like" class="fa-solid fa-heart"></i>
+                </header>
+                <div class="product-main-content__desc">
+                  <h3>Product Type</h3>
+                  <p>Product Desc</p>
+                </div>
+              </div>
+            </main>
+            <footer class="product-footer">
+              <p class="product-footer__price">$ 400</p>
+              <button id="addToCart">Add</button>
+            </footer>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="cart-wrap">
+      <label for="toggleCart" class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="productAmount">0</span>
+      </label>
+      <input type="checkbox" name="toggleCart" id="toggleCart" />
+      <!-- Card Modal -->
+      <div class="cart-modal">
+        <label for="toggleCart" class="cart-mask"></label>
+        <div class="cart-modal-content">
+          <header class="cart-modal-header">
+            <h3>Cart</h3>
+            <label for="toggleCart"><i class="fa-solid fa-xmark"></i></label>
+          </header>
+          <main class="cart-modal-main">
+            <p class="cart-modal-main__empty">
+              Looks Like You Haven't Added Any Product In The Cart
+            </p>
+            <div class="cart-modal-main-list"></div>
+          </main>
+          <footer class="cart-modal-footer">
+            <div class="cart-modal-footer__price">
+              <p>Total: <span id="modalTotalPrice">$0</span></p>
+            </div>
+            <div class="cart-modal-footer__buttons">
+              <button
+                id="cart-modal-footer__buttons-purchase"
+                onclick="showPurchaseModal()"
+              >
+                Purchase <i class="fa-solid fa-credit-card"></i>
+              </button>
+              <button
+                id="cart-modal-footer__buttons-clear"
+                onclick="clearCart()"
+              >
+                Clear cart <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Notification -->
+    <input type="checkbox" name="toggleNotification" id="toggleNotification" />
+    <div id="modal-notification">
+      <label for="toggleNotification" class="modal-notification-mask"></label>
+      <div class="modal-notification-main">
+        <h3 class="modal-notification-main__title">
+          You Can Only Buy 10 Items For Each Product
+        </h3>
+        <label
+          for="toggleNotification"
+          class="modal-notification-main__close-btn"
+          >Okay</label
+        >
+      </div>
+    </div>
+    <!-- Modal Payment -->
+    <input type="checkbox" name="togglePayment" id="togglePayment" />
+    <div id="modal-payment">
+      <label for="togglePayment" class="modal-payment-mask"></label>
+      <div class="modal-payment-main">
+        <div class="modal-payment-shipping-list">
+          <div class="modal-payment-shipping-item">
+            <span class="modal-payment-shipping-item__name"
+              >1 x Apple Watch</span
+            >
+            <span class="modal-payment-shipping-item__price">$ 500</span>
+          </div>
+        </div>
+        <div class="modal-payment-pay">
+          <p>Payment</p>
+          <div>
+            <p>Total amount to be paid:</p>
+            <span>$ 500</span>
+          </div>
+        </div>
+        <div class="modal-payment-order">
+          <label
+            for="togglePayment"
+            class="modal-payment-order__btn modal-payment-order__btn--buy"
+            >Order Now</label
+          >
+          <label
+            for="togglePayment"
+            class="modal-payment-order__btn modal-payment-order__btn--close"
+            >Cancel</label
+          >
+        </div>
+        <!-- <div class="modal-payment-order-detail">
+          <em>Your order has been placed</em>
+          <p>Your order-id is: <span id="modal-payment-order-id">201</span></p>
+          <p>your order will be delivered to you in 3-5 working days</p>
+          <p>
+            you can pay <span id="modal-payment-order-price">$500</span> by card
+            or any online transaction method after the products have been
+            dilivered to you
+          </p>
+          <label for="togglePayment">Okay</label>
+        </div> -->
+      </div>
+    </div>
+  </body>
+  <!-- Bootstrap -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Axios -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+    integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./assets/js/Service/index.js"></script>
+  <script src="./assets/js/Models/product.js"></script>
+  <script src="./assets/js/main.js"></script>
+</html>
